@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-downinstall",
+  "version": "1.0.0",
+  "description": "Download automatic installation APK",
+  "cordova": {
+    "id": "cordova-plugin-downinstall",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmcBig/cordova-plugin-downinstall.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "dmcBig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmcBig/cordova-plugin-downinstall/issues"
+  },
+  "homepage": "https://github.com/dmcBig/cordova-plugin-downinstall/blob/master/README.md"
+}

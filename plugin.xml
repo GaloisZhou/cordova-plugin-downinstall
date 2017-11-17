@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-downinstall" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DownInstall</name>
+    <js-module name="DownInstall" src="www/DownInstall.js">
+        <clobbers target="window.DownInstall" />
+    </js-module>
+    <platform name="android">
+    	<config-file target="AndroidManifest.xml" parent="/manifest">
+		 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+		    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+		    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        </config-file>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DownInstall">
+                <param name="android-package" value="com.dmc.installAPK.DownInstall" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/DownInstall.java" target-dir="src/com/dmc/installAPK" />
+    </platform>
+</plugin>
