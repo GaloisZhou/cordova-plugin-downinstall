@@ -10,16 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmcBig/cordova-plugin-downinstall.git"
+    "url": "git@github.com:GaloisZhou/cordova-plugin-downinstall.git"
   },
   "keywords": [
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "dmcBig",
+  "author": "Galois",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dmcBig/cordova-plugin-downinstall/issues"
-  },
-  "homepage": "https://github.com/dmcBig/cordova-plugin-downinstall/blob/master/README.md"
+  "homepage": "https://github.com/GaloisZhou/cordova-plugin-downinstall/blob/master/README.md"
 }

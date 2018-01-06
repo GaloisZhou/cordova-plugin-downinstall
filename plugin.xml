@@ -17,6 +17,17 @@
                 <param name="android-package" value="com.dmc.installAPK.DownInstall" />
             </feature>
         </config-file>
+        <config-file target="AndroidManifest.xml" parent="application">
+          <provider
+              android:name="android.support.v4.content.FileProvider"
+              android:authorities="${applicationId}.provider"
+              android:exported="false"
+              android:grantUriPermissions="true" >
+              <meta-data
+                  android:name="android.support.FILE_PROVIDER_PATHS"
+                  android:resource="@xml/provider_paths"/>
+          </provider>
+        </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/DownInstall.java" target-dir="src/com/dmc/installAPK" />
     </platform>

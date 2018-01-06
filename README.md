@@ -1,5 +1,7 @@
 # cordova-plugin-downinstall
-Download automatic installation APK 
+Download automatic installation APK
+
+It is compatible with android 7+ now.
 
 How do I use?
 -------------------
