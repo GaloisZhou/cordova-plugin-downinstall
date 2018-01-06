@@ -57,7 +57,7 @@ public class DownInstall extends CordovaPlugin {
 //      Uri uri = FileProvider.getUriForFile(cordova.getActivity(), "com.android.providers.downloads.documents", new File(destination));
 
       //Delete update file if exists
-      File file = new File(destination);
+      final File file = new File(destination);
 
       if (file.exists()) {
         try {
